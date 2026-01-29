@@ -1,7 +1,20 @@
-_site
+# Local secrets / credentials (do not commit)
+.env
+token.json
+google_credentials.json
+config/mcporter.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
 .sass-cache
-.jekyll-cache
 .jekyll-metadata
 vendor
-
 .bundle

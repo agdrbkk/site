@@ -44,14 +44,12 @@ header nav a:hover {
     background-color: #eee;
 }
 
-/* Layout Containers */
-.content-section, .lab-page-content, .work-page-content {
-    padding: 3rem 0;   /* ลด padding ด้านข้างออกเพื่อให้กว้างเต็มที่ตาม max-width */
-    width: 90%;        /* กำหนดความกว้างเริ่มต้น */
-    max-width: 75%;    /* ปรับความกว้างสูงสุดเป็น 75% ของหน้าจอ */
-    margin: 0 auto;    /* จัดกึ่งกลาง */
-    background-color: #f4f4f4;
-    min-height: 50vh;
+.content-section {
+    padding: 3rem 2rem;
+    margin: 0;
+    max-width: 95%;
+    background-color: #fff;
+    box-shadow: none;
 }
 
 .section-title {

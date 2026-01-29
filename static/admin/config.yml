@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main # Please list the branch you want to work with
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: lab
+    label: Lab
+    folder: content/lab
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Body, name: body, widget: markdown}
+
+  - name: work
+    label: Work
+    folder: content/work
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Body, name: body, widget: markdown}
