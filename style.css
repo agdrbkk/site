@@ -44,10 +44,10 @@ header nav a:hover {
     background-color: #eee;
 }
 
-.content-section {
+.content-section, .lab-page-content, .work-page-content {
     padding: 4rem 10%; /* เพิ่ม Padding ด้านข้างเป็น 10% และด้านบนล่างเป็น 4rem */
     margin: 0;
-    background-color: #fff;
+    background-color: #f4f4f4; /* เปลี่ยนเป็นสีเทา */
     box-shadow: none;
 }
 
