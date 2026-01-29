@@ -2,8 +2,8 @@
 title: My Name Specialty Coffee
 category: Interior
 date: 2026-01-29
-thumbnail: /site/assets/uploads/Image_7.png
-image: /site/assets/uploads/Image_7.png
+thumbnail: /assets/images/work/my-name-specialty-coffee/Image_7.png
+image: /assets/images/work/my-name-specialty-coffee/Image_7.png
 description: A specialty coffee shop design project focusing on a unique brand identity and immersive cafe experience.
 layout: entry
 ---
