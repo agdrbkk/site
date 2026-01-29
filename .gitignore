@@ -11,6 +11,10 @@ __pycache__/
 # Node
 node_modules/
 
-# Jekyll build artifacts (if present)
+# Jekyll build artifacts
 _site/
 .jekyll-cache/
+.sass-cache
+.jekyll-metadata
+vendor
+.bundle

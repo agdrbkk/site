@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – ALL GROUP DESIGN AND RESEARCH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-page-content {
+            padding: 5rem;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+
+        .contact-info-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+        }
+
+        .contact-details {
+            margin-bottom: 3rem;
+        }
+
+        .contact-details p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .call-button {
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .call-button:hover {
+            background-color: #444;
+        }
+
+        .contact-form-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            padding: 1rem;
+            border: 1px solid #eee;
+            background-color: #f9f9f9;
+            font-family: inherit;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            border-color: #1a1a1a;
+        }
+
+        .submit-button {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem;
+            border: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .submit-button:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .contact-page-content {
+                padding: 2rem;
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .contact-info-section h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">ALL GROUP DESIGN AND RESEARCH</a>
+        </div>
+        <nav>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="lab.html">Lab</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-page-content">
+        <section class="contact-info-section">
+            <h1>GET IN TOUCH.</h1>
+            <div class="contact-details">
+                <p><strong>Email:</strong> hello@agdr.com</p>
+                <p><strong>Address:</strong> Bangkok, Thailand</p>
+            </div>
+            <a href="tel:+66884715958" class="call-button">โทรหาเรา: 088-471-5958</a>
+        </section>
+
+        <section class="contact-form-section">
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="ชื่อของคุณ" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="อีเมลสำหรับติดต่อกลับ" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="คุณอยากให้เราช่วยเรื่องอะไร?" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">© 2026 ALL GROUP DESIGN AND RESEARCH</div>
+        <div class="footer-right">Designed by Neo</div>
+    </footer>
+
+</body>
+</html>

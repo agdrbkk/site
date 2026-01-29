@@ -1,0 +1,41 @@
+---
+---
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab – ALL GROUP DESIGN AND RESEARCH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">ALL GROUP DESIGN AND RESEARCH</a></div>
+        <nav>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="lab.html">Lab</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="lab-page-content">
+        <div class="category-name">Research & Articles</div>
+        <ul class="article-list">
+            {% assign lab_posts = site.lab | sort: "date" | reverse %}
+            {% for post in lab_posts %}
+                <li class="article-item">
+                  <span class="article-date">{{ post.date | date: "%B %Y" }}</span>
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </main>
+
+    <footer>
+        <div class="footer-left">© 2026 ALL GROUP DESIGN AND RESEARCH</div>
+        <div class="footer-right">Designed by Neo</div>
+    </footer>
+</body>
+</html>

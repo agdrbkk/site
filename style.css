@@ -1,0 +1,251 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #eee;
+}
+
+.content-section {
+    padding: 3rem 5rem;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.about-content h2, 
+.lab-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: #f4f4f4;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
+    header nav a {
+        padding: 0.5rem 1rem 0.5rem 0;
+    }
+
+    .content-section {
+        padding: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 0.5rem;
+    }
+}
+
+/* Portfolio Grid Styles */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem;
+}
+
+.work-item {
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+
+.work-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.work-image-placeholder {
+    background-color: #f0f0f0;
+    aspect-ratio: 16 / 9; /* Standard aspect ratio */
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.work-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.work-info p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Single Article Styles */
+
+.lab-page-content {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 50vh;
+    background-color: #f4f4f4;
+}
+
+.category-name {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+}
+
+.article-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.article-date {
+    font-size: 0.8rem;
+    color: #999;
+    min-width: 60px;
+    text-align: right;
+}
+
+.article-item a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article-item a:hover {
+    color: #1a1a1a;
+}
+
+.lab-page-content .post-header {
+    margin: 0;
+    padding: 0 2rem;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+
+/* จัด Category และ Meta ให้อยู่คนละบรรทัด */
+.lab-page-content .post-category {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #777;
+    margin-bottom: 0.2rem;
+    display: block;
+    line-height: 1.4;
+}
+
+.lab-page-content .post-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+}
+
+.post-meta {
+    font-size: 0.7rem;
+    color: #999;
+    display: block;
+    line-height: 1.4;
+}
+
+.lab-page-content .post-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    text-align: center !important;
+}

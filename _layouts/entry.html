@@ -1,0 +1,43 @@
+---
+---
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} – {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">{{ site.title }}</a>
+    </div>
+    <nav>
+      <a href="{{ '/work.html' | relative_url }}">Work</a>
+      <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="{{ '/lab.html' | relative_url }}">Lab</a>
+      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+    </nav>
+  </header>
+
+  <main style="padding: 5rem; max-width: 900px;">
+    <h1 style="margin-bottom: 0.5rem;">{{ page.title }}</h1>
+    {% if page.date %}
+      <div style="color:#666; margin-bottom: 2rem;">{{ page.date | date: "%B %d, %Y" }}</div>
+    {% endif %}
+
+    <article class="entry-content">
+      {{ content }}
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-left">© 2026 {{ site.title }}</div>
+    <div class="footer-right">Designed by Neo</div>
+  </footer>
+
+</body>
+</html>

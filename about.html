@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – ALL GROUP DESIGN AND RESEARCH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-page-content {
+            padding: 5rem;
+            max-width: 1200px;
+        }
+
+        .hero-text {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 4rem;
+            color: #1a1a1a;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        .mission-item h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        .mission-item p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .contact-cta {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid #eee;
+        }
+
+        .contact-cta a {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 2px solid #1a1a1a;
+            transition: all 0.3s ease;
+        }
+
+        .contact-cta a:hover {
+            color: #666;
+            border-bottom-color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .about-page-content {
+                padding: 2rem;
+            }
+            .hero-text {
+                font-size: 2.2rem;
+            }
+            .mission-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .mission-item p {
+                font-size: 1.2rem;
+            }
+            .contact-cta a {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">ALL GROUP DESIGN AND RESEARCH</a>
+        </div>
+        <nav>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="lab.html">Lab</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="about-page-content">
+        <section class="hero-section">
+            <h1 class="hero-text">
+                WE DESIGN SPACES THAT WORK,<br>
+                DRIVEN BY RESEARCH.
+            </h1>
+        </section>
+
+        <section class="mission-grid">
+            <div class="mission-item">
+                <h3>Our Vision</h3>
+                <p>เราเชื่อว่าสถาปัตยกรรมที่ดีไม่ใช่แค่เรื่องของความงาม แต่คือการแก้ปัญหาที่มีประสิทธิภาพผ่านกระบวนการวิจัยที่เข้มข้น</p>
+            </div>
+            <div class="mission-item">
+                <h3>Our Methodology</h3>
+                <p>ทุกงานออกแบบของ AGDR เริ่มต้นที่ข้อมูล เราค้นคว้าวัสดุ บริบท และพฤติกรรมผู้ใช้ เพื่อสร้างพื้นที่ที่ตอบโจทย์อนาคต</p>
+            </div>
+        </section>
+
+        <section class="mission-grid">
+            <div class="mission-item">
+                <h3>What We Do</h3>
+                <p>Architecture, Interior Design, Masterplan และ Research Laboratory — เราดูแลตั้งแต่แนวคิดไปจนถึงการก่อสร้างจริง</p>
+            </div>
+            <div class="mission-item">
+                <h3>For Our Clients</h3>
+                <p>เราไม่ได้แค่ส่งมอบแบบ แต่เราส่งมอบคุณค่าและทางเลือกที่ดีที่สุด เพื่อให้โครงการของคุณเติบโตอย่างยั่งยืน</p>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div style="margin-bottom: 5rem;">
+                <h3 style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">Selected Work</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div>
+                        <div style="background: #f0f0f0; aspect-ratio: 1; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.8rem;">W01</div>
+                        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem;">Fucheng Chicken Rice</h4>
+                        <p style="font-size: 0.9rem; color: #777;">Architecture</p>
+                    </div>
+                    <div>
+                        <div style="background: #f0f0f0; aspect-ratio: 1; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.8rem;">W02</div>
+                        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem;">Modern Office</h4>
+                        <p style="font-size: 0.9rem; color: #777;">Interior</p>
+                    </div>
+                    <div>
+                        <div style="background: #f0f0f0; aspect-ratio: 1; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.8rem;">W03</div>
+                        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem;">Urban Sanctuary</h4>
+                        <p style="font-size: 0.9rem; color: #777;">Masterplan</p>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem;"><a href="work.html" style="font-size: 1rem; border-bottom: 1px solid #1a1a1a;">View all work</a></div>
+            </div>
+
+            <div style="margin-bottom: 5rem;">
+                <h3 style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">Recent Lab Articles</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div>
+                        <div style="background: #f8f8f8; aspect-ratio: 16/9; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 0.8rem;">L01</div>
+                        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem;">Bamboo Future</h4>
+                        <p style="font-size: 0.9rem; color: #777;">Research</p>
+                    </div>
+                    <div>
+                        <div style="background: #f8f8f8; aspect-ratio: 16/9; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 0.8rem;">L02</div>
+                        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem;">Recycled Concrete</h4>
+                        <p style="font-size: 0.9rem; color: #777;">Material Study</p>
+                    </div>
+                    <div>
+                        <div style="background: #f8f8f8; aspect-ratio: 16/9; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 0.8rem;">L03</div>
+                        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem;">Vertical Living</h4>
+                        <p style="font-size: 0.9rem; color: #777;">Urbanism</p>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem;"><a href="lab.html" style="font-size: 1rem; border-bottom: 1px solid #1a1a1a;">Read more in Lab</a></div>
+            </div>
+
+            <a href="contact.html">Let's build something together →</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">© 2026 ALL GROUP DESIGN AND RESEARCH</div>
+        <div class="footer-right">Designed by Neo</div>
+    </footer>
+
+</body>
+</html>
