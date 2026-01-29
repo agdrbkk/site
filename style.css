@@ -45,7 +45,7 @@ header nav a:hover {
 }
 
 .content-section {
-    padding: 3rem 5rem;
+    padding: 4rem 10%; /* เพิ่ม Padding ด้านข้างเป็น 10% และด้านบนล่างเป็น 4rem */
     margin: 0;
     background-color: #fff;
     box-shadow: none;
