@@ -41,7 +41,7 @@ thumbnail: https://images.unsplash.com/photo-1497366216548-37526070297c?auto=for
 
 > **"Visual Connectivity":** ความรู้สึกที่ว่า ถึงจะอยู่คนละชั้นก็ยัง "มองเห็นกัน" ได้ (อันนี้สำคัญมากสำหรับครอบครัวที่ต้องการความอบอุ่น)
 
-<br><br>
+<br>
 
 ### สู่พิมพ์เขียวที่จับต้องได้
 
@@ -55,8 +55,5 @@ thumbnail: https://images.unsplash.com/photo-1497366216548-37526070297c?auto=for
 
 <br>
 
-**AGDR Lab Conclusion:** การรีโนเวทตึกแถวไม่ได้มีสูตรสำเร็จตายตัว แต่หัวใจสำคัญคือการ "เข้าใจ" บริบทและผู้ใช้งานอย่างลึกซึ้ง เพราะ Design that works, must be driven by research ครับ!
-
 ---
-**AGDR Lab Conclusion:**
-กระบวนการวิจัยนี้เป็นจุดเริ่มต้นก่อนการวางปากกาเพื่อออกแบบจริง เพราะเราเชื่อว่า "Design that works, must be driven by research."
+**AGDR Lab Conclusion:** การรีโนเวทตึกแถวไม่ได้มีสูตรสำเร็จตายตัว แต่หัวใจสำคัญคือการ "เข้าใจ" บริบทและผู้ใช้งานอย่างลึกซึ้ง เพราะ Design that works, must be driven by research ครับ!
