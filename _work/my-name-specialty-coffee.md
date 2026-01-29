@@ -8,24 +8,24 @@ image: /site/assets/images/work/my-name-specialty-coffee/Image_7.png
 layout: entry
 ---
 
-![](/assets/uploads/Image_7.png)
+![My Name Specialty Coffee](/assets/uploads/Image_7.png)
 
-![](/assets/uploads/Image_37.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_37.jpg)
 
-![](/assets/uploads/Image_20.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_20.jpg)
 
-![](/assets/uploads/Image_17.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_17.jpg)
 
-![](/assets/uploads/Image_10.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_10.jpg)
 
-![](/assets/uploads/Image_8.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_8.jpg)
 
-![](/assets/uploads/Image_12.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_12.jpg)
 
-![](/assets/uploads/Image_14.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_14.jpg)
 
-![](/assets/uploads/Image_4.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_4.jpg)
 
-![](/assets/uploads/Image_6.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_6.jpg)
 
-![](/assets/uploads/Image_7.jpg)
+![My Name Specialty Coffee](/assets/uploads/Image_7.jpg)
