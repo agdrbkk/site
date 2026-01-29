@@ -267,19 +267,33 @@ footer {
     text-align: center !important;
 }
 /* Responsive Images in Post Content */
-.post-content img, .lab-page-content img {
-    max-width: 800px; /* จำกัดความกว้างสูงสุดไม่ให้ใหญ่เกินไป */
-    width: 100%;      /* ให้ขยายเต็มที่แต่ไม่เกิน max-width */
+.post-content img, .lab-page-content img, .work-item img, .project-thumbnail img {
+    max-width: 100%;
+    width: auto;
     height: auto;
     display: block;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* เพิ่มเงาจางๆ ให้ดูมีมิติ */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* ปรับขนาดฟอนต์พื้นฐานให้เล็กลงนิดนึงบนมือถือ */
+    }
+
+    .content-section, .lab-page-content, .work-page-content {
+        padding: 1rem !important; /* ลดช่องว่างขอบจอให้เหลือพื้นที่แสดงผลมากขึ้น */
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    header {
+        padding: 1rem !important;
+    }
+
     .post-content img, .lab-page-content img {
-        max-width: 100%; /* บนมือถือให้เต็มจอปกติ */
-        margin: 1.5rem auto;
+        margin: 1rem auto;
+        width: 100% !important; /* บังคับให้รูปเต็มความกว้างหน้าจอมือถือ */
     }
 }
