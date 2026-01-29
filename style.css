@@ -283,17 +283,21 @@ footer {
     }
 
     .content-section, .lab-page-content, .work-page-content {
-        padding: 20px !important; /* ปรับ Margin/Padding ขอบจอให้เหลือ 20px ตามต้องการ */
+        padding: 20px !important; /* ปรับ Padding ขอบจอให้เหลือ 20px */
         width: 100% !important;
         max-width: 100% !important;
+        box-sizing: border-box; /* มั่นใจว่า padding จะไม่ทำให้ content เกินจอ */
     }
 
     header {
         padding: 1rem !important;
     }
 
-    .post-content img, .lab-page-content img {
+    .post-content img, .lab-page-content img, .article-item img, .project-thumbnail img {
         margin: 1rem auto;
-        width: 100% !important; /* บังคับให้รูปเต็มความกว้างหน้าจอมือถือ */
+        max-width: 100% !important; /* รูปจะไม่กว้างเกินพื้นที่ของบทความ (รวม padding แล้ว) */
+        width: auto !important;     /* ยืดหดตามสัดส่วนจริง */
+        height: auto !important;
+        display: block;
     }
 }
