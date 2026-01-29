@@ -45,8 +45,9 @@ header nav a:hover {
 }
 
 .content-section {
-    padding: 3rem 5rem;
+    padding: 3rem 2rem;
     margin: 0;
+    max-width: 95%;
     background-color: #fff;
     box-shadow: none;
 }

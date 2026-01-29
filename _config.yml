@@ -38,6 +38,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - agdr/vendor/
 
 include:
   - _work

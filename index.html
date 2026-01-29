@@ -25,22 +25,24 @@
         <section id="work" class="content-section">
             <div class="section-title">Work</div>
             <div class="portfolio-grid">
-                <!-- งานจะถูกเพิ่มที่นี่ -->
+            {% for work in site.work %}
                 <div class="work-item">
-                    <div class="work-image-placeholder">PROJECT 01</div>
-                    <div class="work-info">
-                        <h3>Fucheng Chicken Rice</h3>
-                        <p>Architecture / Interior Design</p>
-                    </div>
+                    <a href="{{ work.url | relative_url }}">
+                        <div class="work-image-placeholder">
+                            {% if work.image %}
+                                <img src="{{ work.image | relative_url }}" alt="{{ work.title }}" style="width: 100%; height: 100%; object-fit: cover;">
+                            {% else %}
+                                PROJECT
+                            {% endif %}
+                        </div>
+                        <div class="work-info">
+                            <h3>{{ work.title }}</h3>
+                            <p>{{ work.description | default: "Architecture / Design" }}</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="work-item">
-                    <div class="work-image-placeholder">PROJECT 02</div>
-                    <div class="work-info">
-                        <h3>Modern Office Renovation</h3>
-                        <p>Renovation / Masterplan</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
+        </div>
         </section>
 
         <section id="about" class="content-section">
