@@ -1,12 +1,10 @@
----
----
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work – ALL GROUP DESIGN AND RESEARCH</title>
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+    <link rel="stylesheet" href="/site/style.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .work-page-content {
@@ -65,36 +63,24 @@
 
     <header>
         <div class="logo">
-            <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">{{ site.title }}</a>
+            <a href="/site/" style="text-decoration: none; color: inherit;">ALL GROUP DESIGN AND RESEARCH</a>
         </div>
         <nav>
-            <a href="{{ '/work.html' | relative_url }}">Work</a>
-            <a href="{{ '/about.html' | relative_url }}">About</a>
-            <a href="{{ '/lab.html' | relative_url }}">Lab</a>
-            <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+            <a href="/site/work.html">Work</a>
+            <a href="/site/about.html">About</a>
+            <a href="/site/lab.html">Lab</a>
+            <a href="/site/contact.html">Contact</a>
         </nav>
     </header>
 
     <main class="work-page-content">
-        {% assign work_posts = site.work | sort: "date" | reverse %}
-        {% if work_posts and work_posts.size > 0 %}
-            {% assign groups = work_posts | group_by: "category" %}
-            {% for group in groups %}
-                <div class="category-group">
-                    <div class="category-name">{{ group.name }}</div>
-                    <ul class="project-list">
-                        {% for post in group.items %}
-                            <li class="project-item"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            {% endfor %}
-        {% else %}
+        
+        
             <div class="category-group">
                 <div class="category-name">Work</div>
                 <p>No projects yet.</p>
             </div>
-        {% endif %}
+        
     </main>
 
     <footer>
