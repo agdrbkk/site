@@ -11,16 +11,16 @@ body {
     color: #333;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden; /* ป้องกันหน้าเลื่อนซ้ายขวา */
 }
 
 header {
     background-color: #fff;
     color: #333;
-    padding: 1rem 0;
+    padding: 1rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem;
 }
 
 header .logo {
@@ -44,157 +44,69 @@ header nav a:hover {
     background-color: #eee;
 }
 
-.content-section {
+/* Layout Containers */
+.content-section, .lab-page-content, .work-page-content {
     padding: 3rem 5rem;
-    margin: 0;
-    background-color: #fff;
-    box-shadow: none;
+    max-width: 1200px; /* จำกัดความกว้างเนื้อหาหลัก */
+    margin: 0 auto;    /* จัดกึ่งกลาง */
+    background-color: #f4f4f4;
+    min-height: 50vh;
 }
 
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    text-align: left;
 }
 
-.about-content h2, 
-.lab-content h2 {
-    font-size: 2rem;
-    font-weight: 600;
+/* Typography */
+.post-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 1rem;
-    text-align: left;
 }
 
-.content-section p {
-    font-size: 1.1rem;
-    color: #666;
+.post-content {
+    max-width: 800px; /* จำกัดความกว้างเฉพาะเนื้อหาบทความให้อ่านง่าย */
+    margin: 0 auto;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5rem;
-    background-color: #f4f4f4;
-    color: #666;
-    border-top: 1px solid #ddd;
+/* Images - Universal Fix */
+img {
+    max-width: 100%; /* ห้ามกว้างกว่ากรอบ */
+    height: auto;    /* ปรับสูงตามสัดส่วน */
+    display: block;
+    margin: 1.5rem auto;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    header {
-        padding: 1rem 1.5rem;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    header .logo {
-        font-size: 1.4rem;
-        margin-bottom: 0.8rem;
-    }
-
-    header nav {
-        margin-top: 0.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    header nav a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
-    }
-
-    .content-section, .lab-page-content, .work-page-content {
-        padding: 1.5rem !important;
-    }
-
-    .section-title, .lab-page-content .post-title {
-        font-size: 1.8rem !important;
-        line-height: 1.2;
-    }
-
-    .article-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .article-date {
-        text-align: left;
-        margin-bottom: 0.2rem;
-    }
-
-    .article-item a {
-        font-size: 1.2rem;
-    }
+.post-content img, .lab-page-content img {
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-/* Portfolio Grid Styles */
-.portfolio-grid {
+/* Portfolio Grid */
+.portfolio-grid, .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.work-item {
-    padding: 1rem;
-    transition: all 0.3s ease;
+.project-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #eee;
 }
 
-
-.work-item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0; /* ล้าง margin สำหรับ thumbnail */
 }
 
-.work-image-placeholder {
-    background-color: #f0f0f0;
-    aspect-ratio: 16 / 9; /* Standard aspect ratio */
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #999;
-    font-size: 1.2rem;
-}
-
-.work-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-.work-info p {
-    font-size: 1rem;
-    color: #777;
-}
-
-/* Single Article Styles */
-
-.lab-page-content {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    min-height: 50vh;
-    background-color: #f4f4f4;
-}
-
-.category-name {
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #777;
-    margin-bottom: 1rem;
-}
-
-.article-list {
-    list-style: none;
-    padding: 0;
-}
-
+/* Lab List */
 .article-item {
     margin-bottom: 2rem;
     display: flex;
@@ -202,102 +114,65 @@ footer {
 }
 
 .article-date {
-    font-size: 0.8rem;
-    color: #999;
     min-width: 120px;
-    text-align: left;
-    white-space: nowrap;
-    margin-right: 1.5rem;
+    color: #999;
+    font-size: 0.9rem;
 }
 
 .article-item a {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
     font-family: 'Arial', 'IBM Plex Sans Thai', sans-serif;
-    line-height: 1.3;
-}
-
-.article-item a:hover {
     color: #1a1a1a;
+    text-decoration: none;
 }
 
-.lab-page-content .post-header {
-    margin: 0;
-    padding: 0 2rem;
-    text-align: left;
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
     background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    color: #666;
 }
 
-/* จัด Category และ Meta ให้อยู่คนละบรรทัด */
-.lab-page-content .post-category {
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #777;
-    margin-bottom: 0.2rem;
-    display: block;
-    line-height: 1.4;
-}
-
-.lab-page-content .post-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-        margin-top: 0.5rem;
-}
-
-.post-meta {
-    font-size: 0.7rem;
-    color: #999;
-    display: block;
-    line-height: 1.4;
-}
-
-.lab-page-content .post-content h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-    text-align: center !important;
-}
-/* Responsive Images in Post Content */
-.post-content img, .lab-page-content img, .work-item img, .project-thumbnail img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-    margin: 1.5rem auto;
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
+/* Mobile Responsive Fixes */
 @media (max-width: 768px) {
-    body {
-        font-size: 14px; /* ปรับขนาดฟอนต์พื้นฐานให้เล็กลงนิดนึงบนมือถือ */
+    header {
+        padding: 1rem 20px;
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+        padding: 0.5rem 10px;
     }
 
     .content-section, .lab-page-content, .work-page-content {
-        padding: 20px !important; /* ปรับ Padding ขอบจอให้เหลือ 20px */
-        width: 100% !important;
+        padding: 20px !important; /* บังคับ 20px ตามต้องการ */
+    }
+
+    .post-title {
+        font-size: 1.8rem;
+    }
+
+    /* บังคับรูปให้อยู่ในกรอบ 20px */
+    img, .post-content img, .lab-page-content img {
         max-width: 100% !important;
-        box-sizing: border-box; /* มั่นใจว่า padding จะไม่ทำให้ content เกินจอ */
+        width: 100% !important;
+        margin: 1rem 0;
     }
-
-    header {
-        padding: 1rem !important;
-    }
-
-    .post-content img, .lab-page-content img, .article-item img, .project-thumbnail img {
-        margin: 1rem auto;
-        max-width: 100% !important; /* รูปจะไม่กว้างเกินพื้นที่ของบทความ (รวม padding แล้ว) */
-        width: auto !important;     /* ยืดหดตามสัดส่วนจริง */
-        height: auto !important;
-        display: block;
+    
+    footer {
+        flex-direction: column;
+        padding: 2rem 20px;
+        text-align: center;
+        gap: 1rem;
     }
 }
