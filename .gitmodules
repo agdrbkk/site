@@ -1,0 +1,3 @@
+[submodule "agdr"]
+	path = agdr
+	url = git@github.com:agdrbkk/site.git
