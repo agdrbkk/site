@@ -1,0 +1,16 @@
+# Local secrets / credentials (do not commit)
+.env
+token.json
+google_credentials.json
+config/mcporter.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Jekyll build artifacts (if present)
+_site/
+.jekyll-cache/
