@@ -47,7 +47,7 @@ header nav a:hover {
 /* Layout Containers */
 .content-section, .lab-page-content, .work-page-content {
     padding: 3rem 5rem;
-    max-width: 1200px; /* จำกัดความกว้างเนื้อหาหลัก */
+    max-width: 75%; /* ปรับความกว้างเนื้อหาหลักเป็น 75% ของจอคอม */
     margin: 0 auto;    /* จัดกึ่งกลาง */
     background-color: #f4f4f4;
     min-height: 50vh;
