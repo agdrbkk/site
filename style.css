@@ -283,7 +283,7 @@ footer {
     }
 
     .content-section, .lab-page-content, .work-page-content {
-        padding: 1rem !important; /* ลดช่องว่างขอบจอให้เหลือพื้นที่แสดงผลมากขึ้น */
+        padding: 20px !important; /* ปรับ Margin/Padding ขอบจอให้เหลือ 20px ตามต้องการ */
         width: 100% !important;
         max-width: 100% !important;
     }
