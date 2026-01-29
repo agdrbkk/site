@@ -268,9 +268,18 @@ footer {
 }
 /* Responsive Images in Post Content */
 .post-content img, .lab-page-content img {
-    max-width: 100%;
+    max-width: 800px; /* จำกัดความกว้างสูงสุดไม่ให้ใหญ่เกินไป */
+    width: 100%;      /* ให้ขยายเต็มที่แต่ไม่เกิน max-width */
     height: auto;
     display: block;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
     border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* เพิ่มเงาจางๆ ให้ดูมีมิติ */
+}
+
+@media (max-width: 768px) {
+    .post-content img, .lab-page-content img {
+        max-width: 100%; /* บนมือถือให้เต็มจอปกติ */
+        margin: 1.5rem auto;
+    }
 }
