@@ -91,6 +91,39 @@ img {
     gap: 2rem;
 }
 
+.work-item {
+    transition: all 0.3s ease;
+}
+
+.work-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+}
+
+.work-image-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #eee;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.work-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.work-info p {
+    color: #666;
+    font-size: 1rem;
+}
+
 .project-thumbnail {
     width: 100%;
     aspect-ratio: 16 / 9;
