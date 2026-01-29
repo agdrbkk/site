@@ -1,10 +1,12 @@
+---
+---
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work – ALL GROUP DESIGN AND RESEARCH</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .work-page-content {
@@ -63,40 +65,36 @@
 
     <header>
         <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: inherit;">ALL GROUP DESIGN AND RESEARCH</a>
+            <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">{{ site.title }}</a>
         </div>
         <nav>
-            <a href="work.html">Work</a>
-            <a href="about.html">About</a>
-            <a href="lab.html">Lab</a>
-            <a href="contact.html">Contact</a>
+            <a href="{{ '/work.html' | relative_url }}">Work</a>
+            <a href="{{ '/about.html' | relative_url }}">About</a>
+            <a href="{{ '/lab.html' | relative_url }}">Lab</a>
+            <a href="{{ '/contact.html' | relative_url }}">Contact</a>
         </nav>
     </header>
 
     <main class="work-page-content">
-        <div class="category-group">
-            <div class="category-name">Architecture / Interior</div>
-            <ul class="project-list">
-                <li class="project-item"><a href="#">Fucheng Chicken Rice</a></li>
-                <li class="project-item"><a href="#">Modern Office Renovation</a></li>
-                <li class="project-item"><a href="#">The Urban Sanctuary</a></li>
-            </ul>
-        </div>
-
-        <div class="category-group">
-            <div class="category-name">Research / Lab</div>
-            <ul class="project-list">
-                <li class="project-item"><a href="#">Material Study: Bamboo Composite</a></li>
-                <li class="project-item"><a href="#">Future Living Framework</a></li>
-            </ul>
-        </div>
-
-        <div class="category-group">
-            <div class="category-name">Exhibition / Installation</div>
-            <ul class="project-list">
-                <li class="project-item"><a href="#">Light & Space Pavilion</a></li>
-            </ul>
-        </div>
+        {% assign work_posts = site.work | sort: "date" | reverse %}
+        {% if work_posts and work_posts.size > 0 %}
+            {% assign groups = work_posts | group_by: "category" %}
+            {% for group in groups %}
+                <div class="category-group">
+                    <div class="category-name">{{ group.name }}</div>
+                    <ul class="project-list">
+                        {% for post in group.items %}
+                            <li class="project-item"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="category-group">
+                <div class="category-name">Work</div>
+                <p>No projects yet.</p>
+            </div>
+        {% endif %}
     </main>
 
     <footer>

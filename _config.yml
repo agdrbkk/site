@@ -13,6 +13,22 @@ collections:
   lab:
     output: true
     permalink: /lab/:name/
+  work:
+    output: true
+    permalink: /work/:name/
+
+# Ensure collection items render with a layout by default
+defaults:
+  - scope:
+      path: ""
+      type: lab
+    values:
+      layout: entry
+  - scope:
+      path: ""
+      type: work
+    values:
+      layout: entry
 
 exclude:
   - Gemfile
