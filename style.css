@@ -253,3 +253,11 @@ footer {
     color: #333;
     text-align: center !important;
 }
+/* Responsive Images in Post Content */
+.post-content img, .lab-page-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 4px;
+}
