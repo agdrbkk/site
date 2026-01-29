@@ -1,0 +1,29 @@
+title: ALL GROUP DESIGN AND RESEARCH
+email: hello@agdr.com
+description: >-
+  Personal Design Assistant & Workspace Manager
+baseurl: "/site"
+url: "https://agdrbkk.github.io"
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  lab:
+    output: true
+    permalink: /lab/:name/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+include:
+  - _work
+  - _lab
+  - admin

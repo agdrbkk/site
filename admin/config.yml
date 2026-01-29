@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: agdrbkk/site
+  branch: main
+  auth_type: pkce
+  app_id: Ov23licPJ6LivCix3iKJ
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "work"
+    label: "Work Projects"
+    folder: "_work"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Architecture", "Interior", "Research", "Exhibition"]}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "lab"
+    label: "Lab Articles"
+    folder: "_lab"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "string", default: "Research & Articles"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
