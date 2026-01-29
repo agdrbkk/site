@@ -91,6 +91,41 @@ img {
     gap: 2rem;
 }
 
+.home-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
+    gap: 3rem;
+}
+
+@media (max-width: 900px) {
+    .home-portfolio-grid {
+        grid-template-columns: 1fr; /* 1 column for tablet/mobile */
+    }
+}
+
+.see-more-container {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.btn-see-more {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #333;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-see-more:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+}
+
 .work-item {
     transition: all 0.3s ease;
 }

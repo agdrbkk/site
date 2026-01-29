@@ -26,8 +26,8 @@
     <main>
         <section id="work" class="content-section">
             <div class="section-title">Work</div>
-            <div class="portfolio-grid">
-            {% for work in site.work %}
+            <div class="home-portfolio-grid">
+            {% for work in site.work limit: 6 %}
                 <div class="work-item">
                     <a href="{{ work.url | relative_url }}">
                         <div class="work-image-placeholder">
@@ -44,7 +44,10 @@
                     </a>
                 </div>
             {% endfor %}
-        </div>
+            </div>
+            <div class="see-more-container">
+                <a href="{{ '/work.html' | relative_url }}" class="btn-see-more">See our work</a>
+            </div>
         </section>
 
         <section id="about" class="content-section">
