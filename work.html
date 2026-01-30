@@ -102,26 +102,29 @@
     </header>
 
     <main class="work-page-content">
-        
-        
+        {% assign categories = site.work | map: 'category' | uniq %}
+        {% for category in categories %}
             <div class="category-group">
-                <div class="category-name">Interior Design</div>
+                <div class="category-name">{{ category }}</div>
                 <div class="project-grid">
-                    
+                    {% assign category_works = site.work | where: 'category', category %}
+                    {% for work in category_works %}
                         <div class="project-item">
-                            <a href="/site/work/my-name-specialty-coffee/">
+                            <a href="{{ work.url | relative_url }}">
                                 <div class="project-thumbnail">
-                                    
-                                        <img src="/site/assets/images/work/my-name-specialty-coffee/Image_7.png" alt="My Name Specialty Coffee">
-                                    
+                                    {% if work.thumbnail %}
+                                        <img src="{{ work.thumbnail | relative_url }}" alt="{{ work.title }}">
+                                    {% elsif work.image %}
+                                        <img src="{{ work.image | relative_url }}" alt="{{ work.title }}">
+                                    {% endif %}
                                 </div>
-                                <span class="project-title">My Name Specialty Coffee</span>
+                                <span class="project-title">{{ work.title }}</span>
                             </a>
                         </div>
-                    
+                    {% endfor %}
                 </div>
             </div>
-        
+        {% endfor %}
     </main>
 
     <footer>

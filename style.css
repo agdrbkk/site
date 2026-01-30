@@ -6,12 +6,17 @@
 }
 
 body {
-    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Arial', 'IBM Plex Sans Thai', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden; /* ป้องกันหน้าเลื่อนซ้ายขวา */
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6, .logo, nav a, .project-title, .section-title, .btn-see-more {
+    font-family: 'Arial', 'IBM Plex Sans Thai', sans-serif;
 }
 
 header {
@@ -110,20 +115,30 @@ img {
 
 .btn-see-more {
     display: inline-block;
-    padding: 1rem 2.5rem;
-    background-color: #333;
-    color: #fff !important;
+    padding: 0;
+    background-color: transparent;
+    color: #1a1a1a !important;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 4px;
+    border-radius: 0;
     transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #1a1a1a;
 }
 
 .btn-see-more:hover {
-    background-color: #000;
-    transform: translateY(-2px);
+    background-color: transparent;
+    transform: none;
+    color: #666 !important;
+    border-bottom-color: #666;
+}
+
+@media (max-width: 768px) {
+    .btn-see-more {
+        font-size: 1.8rem;
+    }
 }
 
 .work-item {
