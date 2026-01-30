@@ -27,3 +27,23 @@ layout: entry
 ![T5 House](/site/assets/images/work/t5-house/image_9.jpg)
 
 ![T5 House](/site/assets/images/work/t5-house/image_10.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_11.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_12.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_13.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_14.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_15.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_16.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_17.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_18.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_19.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_20.jpg)
