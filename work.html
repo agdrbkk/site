@@ -102,29 +102,33 @@
     </header>
 
     <main class="work-page-content">
-        {% assign categories = site.work | map: 'category' | uniq %}
-        {% for category in categories %}
-            <div class="category-group">
-                <div class="category-name">{{ category }}</div>
-                <div class="project-grid">
-                    {% assign category_works = site.work | where: 'category', category %}
-                    {% for work in category_works %}
-                        <div class="project-item">
-                            <a href="{{ work.url | relative_url }}">
-                                <div class="project-thumbnail">
-                                    {% if work.thumbnail %}
-                                        <img src="{{ work.thumbnail | relative_url }}" alt="{{ work.title }}">
-                                    {% elsif work.image %}
-                                        <img src="{{ work.image | relative_url }}" alt="{{ work.title }}">
-                                    {% endif %}
-                                </div>
-                                <span class="project-title">{{ work.title }}</span>
-                            </a>
+        <div class="category-group">
+            <div class="category-name">Architecture / Interior</div>
+            <div class="project-grid">
+                <div class="project-item">
+                    <a href="/site/work/baan-maria/">
+                        <div class="project-thumbnail">
+                            <img src="/site/assets/images/work/baan-maria/image_1.jpg" alt="Baan Maria">
                         </div>
-                    {% endfor %}
+                        <span class="project-title">Baan Maria</span>
+                    </a>
                 </div>
             </div>
-        {% endfor %}
+        </div>
+
+        <div class="category-group">
+            <div class="category-name">Interior</div>
+            <div class="project-grid">
+                <div class="project-item">
+                    <a href="/site/work/my-name-specialty-coffee/">
+                        <div class="project-thumbnail">
+                            <img src="/site/assets/images/work/my-name-specialty-coffee/Image_7.png" alt="My Name Specialty Coffee">
+                        </div>
+                        <span class="project-title">My Name Specialty Coffee</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
