@@ -47,3 +47,7 @@ layout: entry
 ![T5 House](/site/assets/images/work/t5-house/image_19.jpg)
 
 ![T5 House](/site/assets/images/work/t5-house/image_20.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_21.jpg)
+
+![T5 House](/site/assets/images/work/t5-house/image_22.jpg)
