@@ -19,5 +19,3 @@ layout: entry
 ![Baan Maria](/assets/images/work/baan-maria/image_5.jpg)
 
 ![Baan Maria](/assets/images/work/baan-maria/image_6.jpg)
-
-![Baan Maria](/assets/images/work/baan-maria/image_7.jpg)
